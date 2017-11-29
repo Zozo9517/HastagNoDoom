@@ -1,0 +1,23 @@
+﻿<Window x:Name="menuWindow" x:Class="HashtagNoDoom.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HashtagNoDoom"
+        mc:Ignorable="d"
+        Title="Hashtag No Doom" Height="500" Width="500" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="125"/>
+            <RowDefinition Height="125"/>
+            <RowDefinition Height="125"/>
+            <RowDefinition Height="125"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="GameTitle" HorizontalAlignment="Left" Height="75" Margin="10,10,0,0" Stretch="Fill" VerticalAlignment="Top" Width="470" Grid.Row="0"/>
+        <Image x:Name="NewGame" HorizontalAlignment="Left" Height="74" Margin="126,25,0,0" Stretch="Fill" VerticalAlignment="Top" Width="220" Grid.Row="1" MouseDown="ImageClick" MouseEnter="NewGame_MouseEnter" MouseLeave="NewGame_MouseLeave"/>
+        <Image x:Name="Score" HorizontalAlignment="Left" Height="75" Margin="111,10,0,0" Stretch="Fill" VerticalAlignment="Top" Width="235" Grid.Row="2"  MouseDown="ImageClick" MouseEnter="NewGame_MouseEnter" MouseLeave="NewGame_MouseLeave"/>
+        <Image x:Name="Exit" HorizontalAlignment="Left" Height="76" Margin="111,102,0,0" Stretch="Fill" VerticalAlignment="Top" Width="235" Grid.Row="2" Grid.RowSpan="2"  MouseDown="ImageClick" MouseEnter="NewGame_MouseEnter" MouseLeave="NewGame_MouseLeave"/>
+        <Image x:Name="Settings" Height="45" Width="45" Margin="10,10,432,65" Grid.Row="1"  MouseDown="ImageClick" MouseEnter="NewGame_MouseEnter" MouseLeave="NewGame_MouseLeave"></Image>
+        <Image x:Name="Help" Height="50" Width="50" Margin="432,10,10,65" Grid.Row="1" RenderTransformOrigin="6.17,0.75"  MouseDown="ImageClick" MouseEnter="NewGame_MouseEnter" MouseLeave="NewGame_MouseLeave"/>
+    </Grid>
+</Window>
